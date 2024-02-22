@@ -13,30 +13,25 @@ jobs:
         with:
           java-version: '11'
           
-      # Step 2: Download and save Ducky image
+      # Step 2: Download Ducky image
       - name: Download Ducky image
-        uses: actions/download-artifact@v2
-        if: startsWith(github.ref,'refs/heads/master') && github.event_name != 'workflow_dispatch'
-        
-      - name: Update cache for Maven dependencies
-        uses: actions/cache@v2
-        path: ~/.m2/repository/org/apache/maven/maven-dependency-plugin/3.0.2/maven-dependency-plugin-3.0.2.jar
-        key: maven-dependencies
-        restore-keys: |
-          ${{ secrets.RUNNER_OS }}
-          maven-dependencies
-
-      - name: Run commands to download Ducky image
         run: |
           curl --fail -sS -O https://boonk8812.github.io/actionsimages/ducky@v1.img -o ducky@v1.img
           echo "Downloaded Ducky image successfully" >> $GITHUB_WORKFLOW_LOG.txt
 
-      # Step 3: Save JDK and Ducky image as artifacts
-      - name: Save JDK and Ducky image as artifacts
+      # Step 3: Save JDK as an artifact
+      - name: Save JDK as an artifact
         uses: actions/upload-artifact@v2
         name: jdk
-        path: /usr/lib/jvm/java-11-openjdk-amd64
+        if: github.event_name == 'push' || github.event_name == 'pull_request'
+        env:
+          JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
+        working_directory: '/usr/lib/jvm/java-11-openjdk-amd64/'
+        path: .
 
+      # Step 4: Save Ducky image as an artifact
+      - name: Save Ducky image as an artifact
         uses: actions/upload-artifact@v2
         name: ducky-image
+        if: github.event_name == 'push' || github.event_name == 'pull_request'
         path: ducky@v1.img
