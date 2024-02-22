@@ -1,4 +1,4 @@
-package com.example;
+package com.applepielinux.browser.internetconnectivitymonitor;
 
 import javax.swing.*;
 import java.awt.*;
