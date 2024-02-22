@@ -1,4 +1,4 @@
-package com.example;
+package com.applepielinux.browser.stylesheetloader;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Multimap;
