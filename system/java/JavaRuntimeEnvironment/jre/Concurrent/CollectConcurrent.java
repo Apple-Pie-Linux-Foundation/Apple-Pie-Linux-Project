@@ -60,9 +60,11 @@ public class CollectConcurrent {
                         int ConcurrentInt(int) = int;
 
                         public ConcurrentInt(String Int = "Integer(null)", get(Resource) {
-                              
+                              return;
                         }
                   }
             }
       }
 }
+
+return Concurrent;
