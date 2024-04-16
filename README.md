@@ -26,3 +26,16 @@ Hello! I want to be a part of the Apple Pie Linux project. Can you please add me
      And ALWAYS be sensical and supportive of the project. If you start running BOT SCRIPTS, start hacking, or spamming the project, you will get kicked out from the project.
    
 <font color="#1c73ff"><b>Linux based OS: YES!</b></font>
+# The basics 
+
+### What about the Package Manager?
+
+The Package Manager is called the Fetcher Package Manager. It is accessible from:
+
+* Shell command (Terminal is renamed to ShellMaster): pkg_manager
+* Start menu search: Fetcher Package Manager
+
+### Okay, what about installing apps?
+
+* Shell Commands: applecore_shop or sudo apt-get install <APP_OR_PACKAGE_NAME_HERE> -y or sudo apt-install <APP_OR_PACKAGE_NAME_HERE> -y
+* Start menu search: 
