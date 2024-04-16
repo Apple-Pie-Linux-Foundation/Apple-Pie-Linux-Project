@@ -24,3 +24,5 @@ Hello! I want to be a part of the Apple Pie Linux project. Can you please add me
      NO SPAMMING EMAIL
    
      And ALWAYS be sensical and supportive of the project. If you start running BOT SCRIPTS, start hacking, or spamming the project, you will get kicked out from the project.
+   
+<font color="#1c73ff"><b>Linux based OS: YES!</b></font>
