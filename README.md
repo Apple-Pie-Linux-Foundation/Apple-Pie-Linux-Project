@@ -38,4 +38,4 @@ The Package Manager is called the Fetcher Package Manager. It is accessible from
 ### Okay, what about installing apps?
 
 * Shell Commands: applecore_shop or sudo apt-get install <APP_OR_PACKAGE_NAME_HERE> -y or sudo apt-install <APP_OR_PACKAGE_NAME_HERE> -y
-* Start menu search: 
+* Start menu search: Applecore Shop
