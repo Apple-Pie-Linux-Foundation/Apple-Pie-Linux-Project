@@ -34,7 +34,7 @@ Hello! I want to be a part of the Apple Pie Linux project. Can you please add me
 
 The Package Manager is called the Fetcher Package Manager. It is accessible from:
 
-* Shell command (Terminal is renamed to ShellMaster): pkg_manager
+* Shell command (Terminal is renamed to ShellMaster): `pkg_manager`
 * Start menu search: Fetcher Package Manager
 
 ### Okay, what about installing apps?
