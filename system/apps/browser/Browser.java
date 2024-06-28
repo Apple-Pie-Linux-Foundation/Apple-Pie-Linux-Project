@@ -15,6 +15,8 @@ import java.net.UnknownHostException;
 
 public class Browser extends JFrame {
 
+    // Browser class.
+
     private static final long serialVersionUID = 1L;
 
     public static void main(String[] args) {
@@ -28,7 +30,7 @@ public class Browser extends JFrame {
     }
 
     public Browser() {
-        super("CatWeaselBrowser");
+        super("IceCatBrowser");
         initComponents();
     }
 
@@ -47,6 +49,7 @@ public class Browser extends JFrame {
                         retrieveIndexFile(uri.getHost(), uri.getPort());
                     } catch (URISyntaxException e) {
                         showErrorMessage(e);
+                        // shows error msg.
                     }
                 }
             }
