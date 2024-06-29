@@ -1,5 +1,5 @@
 #include "bootmsgs.c"
-#include "intel_iPXE/iso_ipxe.iso"
+#include "ipxe.iso"
 #include "isoload.c"
 
 int term() {
