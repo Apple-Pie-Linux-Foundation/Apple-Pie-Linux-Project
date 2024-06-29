@@ -71,6 +71,9 @@ SC_MODULE(bootmsgs) : sc_module("bootmsgs") {
         printf("0x%x, %p\n", 0xA1835CBU, &System::bootManager);
         printf("0x%x, %p\n", 0xC000014U, &System::IPXE);
         printf("0x%x, %p\n", 0x2FFF27BU, &System::bootOptions);
+        printf("0x%x, %p\n", 0xC51813AU, &System::sysinfo, postinfo, biosinfo, disks);
+        printf("0x%x, %p\n", 0x10183EDU, "Unix network time error !!");
+        printf("0x%x, %p\n", 0xFE018E4U, "Unix network time sync failure !!", &System::kernelversion, pkgmanagerversion, jreversion, javaversion, jdkversion, debuggerversion, *all);
 
         eth.write("AgoyoaFY6TTAOY887sTSFTakujmhGAKH.ksgLHSlauhsfoFAYKGCgcVJHVulfugCgcJGCHGKcgh/.,,/.><M$?@N$M@#n4/23n$<M$N#2/.,me.,M?><>,mS/aMS:las;amS:?<Y!@Pu#H!:kb3?!@mne !@?#>m");
 };
