@@ -3,6 +3,7 @@
 #include <string.h>
 #include <stdint.h>
 #include <stb_image.h>
+#include <stb_image_write.h>
 
 #define WIDTH  96
 #define HEIGHT 84
@@ -29,7 +30,18 @@ int main() {
     }
 
     // Save image to file using stb_image
-    stbi_write_png("ColorTestImage.png", WIDTH, HEIGHT, 3, image_data);
+    int result = stbi_write_png("ColorTestImage.png", WIDTH, HEIGHT, 3, image_data);
+    if (result == 0) {
+        fprintf(stderr, "Error: failed to write image to file\n");
+        return -1; // exit with error code -1
+    }
+
+    // Show info and warning messages
+    if (stbi_info_from_memory(image_data, WIDTH * HEIGHT * 3)) {
+        printf("Info: image written successfully\n");
+    } else {
+        fprintf(stderr, "Warning: image writing failed\n");
+    }
 
     printf("Color map config hex string: %s\n", color_map);
     printf("Image saved to ColorTestImage.png\n");
