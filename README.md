@@ -18,7 +18,7 @@ This OS will be pre-compiled for your computer. You can restore your computer to
 
 Hello! I want to be a part of the Apple Pie Linux project. Can you please add me to the contributors/collaborators list? Here is my GitHub Username: Your_GitHub_Username_Goes_Here
 
-3. Rules:
+2. Rules:
      NO BOTS
    
      NO HACKING
